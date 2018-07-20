@@ -1,4 +1,4 @@
-package com.models;
+package com.module2.models;
 
 public class User {
 

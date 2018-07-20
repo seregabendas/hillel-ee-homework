@@ -1,6 +1,6 @@
-package com.controllers;
+package com.module1.controllers;
 
-import com.services.CountryService;
+import com.module1.services.CityService;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class CountryServlet extends HttpServlet {
+public class CityServlet extends HttpServlet {
+
 
 
   @Override
@@ -16,9 +17,8 @@ public class CountryServlet extends HttpServlet {
       throws ServletException, IOException {
     ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
         "spring-application.xml");
-    CountryService countryService = applicationContext
-        .getBean("countryService", CountryService.class);
-    resp.getWriter().println(countryService.getCountryList());
+    CityService cityService = applicationContext.getBean("cityService", CityService.class);
+    resp.getWriter().println(cityService.getCityList());
   }
 
 }

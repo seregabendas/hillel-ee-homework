@@ -1,11 +1,11 @@
-package com.daos;
+package com.module2.daos;
 
-import com.models.Country;
+import com.module2.models.Country;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 
-@Repository("countryDao")
+@Repository("countryDao2")
 public class CountryDao {
 
   private List<Country> countryList = Arrays.asList(new Country("Ukraine"), new Country("Russia"));

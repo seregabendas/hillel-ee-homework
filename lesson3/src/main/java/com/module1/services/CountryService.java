@@ -1,7 +1,7 @@
-package com.services;
+package com.module1.services;
 
-import com.daos.CountryDao;
-import com.models.Country;
+import com.module1.daos.CountryDao;
+import com.module1.models.Country;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.services;
+package com.module1.services;
 
-import com.daos.UserDao;
-import com.models.User;
+import com.module1.daos.UserDao;
+import com.module1.models.User;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.models;
+package com.module1.models;
 
 public class Country {
 
