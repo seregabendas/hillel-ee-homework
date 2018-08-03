@@ -1,11 +1,12 @@
 package com.module1.daos;
 
 import com.module1.models.User;
-import java.util.Arrays;
-import java.util.List;
-import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import javax.annotation.PostConstruct;
+import java.util.Arrays;
+import java.util.List;
 
 @Repository
 public class UserDao {
@@ -18,8 +19,8 @@ public class UserDao {
   @PostConstruct
   public void init() {
     userList = Arrays.asList(
-        new User("Sergey", cityDao.getCityByIndex(0)),
-        new User("ivan", cityDao.getCityByIndex(1)));
+        new User(1, "Sergey", cityDao.getCityByIndex(0)),
+        new User(2, "ivan", cityDao.getCityByIndex(1)));
   }
 
   public List<User> getUserList() {

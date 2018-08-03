@@ -2,12 +2,14 @@ package com.module1.models;
 
 public class Country {
 
+  private int id;
   private String name;
 
   public Country() {
   }
 
-  public Country(String name) {
+  public Country(int id, String name) {
+    this.id = id;
     this.name = name;
   }
 
@@ -19,10 +21,19 @@ public class Country {
     this.name = name;
   }
 
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
   @Override
   public String toString() {
     return "Country{" +
-        "name='" + name + '\'' +
-        '}';
+            "id=" + id +
+            ", name='" + name + '\'' +
+            '}';
   }
 }
