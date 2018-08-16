@@ -1,0 +1,1 @@
+insert into COUNTRY (ID, NAME) values (1, 'Ukraine');
